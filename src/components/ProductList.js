@@ -17,7 +17,7 @@ const ProductList = () => {
                         <td>{product.price}</td>
                         <td>{product.description}</td>
                         <td>{product.category}</td>
-                        <td>{product.image}</td>
+                        <td><img src={product.image} alt={product.image} width="100"/></td>
                     </>
                 )
             }}
