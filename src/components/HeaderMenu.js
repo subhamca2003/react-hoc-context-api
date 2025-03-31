@@ -17,6 +17,9 @@ const HeaderMenu = () => {
               <Link className="nav-link" to="/parent-component">Props</Link>
             </li>
             <li className="nav-item">
+              <Link className="nav-link" to="/focus-input-example">focus-input-example</Link>
+            </li>
+            <li className="nav-item">
               <Link className="nav-link" to="/counter-limit">counter-limit</Link>
             </li>
             <li className="nav-item">

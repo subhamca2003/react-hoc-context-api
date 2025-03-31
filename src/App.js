@@ -17,6 +17,7 @@ import Header from './components/Header'; // Import the Header component
 import Login from './components/Login'; // Example login component
 import FetchComponent from './components/fetch/FetchList';
 import CounterLimit from './components/CountLimit';
+import FocusInputExample from './components/FocusInputExample';
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
           <Header></Header>
       <Routes>
         <Route path="/parent-component" element={<ParentComponent />} />
+        <Route path="/focus-input-example" element={<FocusInputExample />} />
         <Route path="/product-list" element={<ProductList />} />
         <Route path="/cart-list" element={<CartList />} />
         <Route path="/student-list" element={<StudentList />} />
