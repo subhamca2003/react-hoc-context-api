@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const HeaderMenu = () => {
   return (
@@ -12,6 +12,16 @@ const HeaderMenu = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
+          
+            <li className="nav-item">
+              <Link className="nav-link" to="/parent-component">Props</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/counter-limit">counter-limit</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/fetch-component">Fetch-component</Link>
+            </li>
             <li className="nav-item">
               <Link className="nav-link" to="/">Users</Link>
             </li>
@@ -22,10 +32,16 @@ const HeaderMenu = () => {
               <Link className="nav-link" to="/product-list">Products</Link>
             </li>
             <li className="nav-item">
+              <Link className="nav-link" to="/order-list">Order</Link>
+            </li>
+            <li className="nav-item">
               <Link className="nav-link" to="/student-list">Student list (HOC)</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/cart-list">Cart (Context API)</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/login">Login</Link>
             </li>
           </ul>
         </div>
