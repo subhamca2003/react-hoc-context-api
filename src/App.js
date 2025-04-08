@@ -18,6 +18,9 @@ import Login from './components/Login'; // Example login component
 import FetchComponent from './components/fetch/FetchList';
 import CounterLimit from './components/CountLimit';
 import FocusInputExample from './components/FocusInputExample';
+import PostComponent from './components/posts/PostComponent';
+import SamplePromiseComponent from './components/promise/SamplePromiseComponent';
+import LazyLoading from './components/lazyLoading/App';
 
 const App = () => {
   return (
@@ -38,7 +41,10 @@ const App = () => {
         <Route path="/user/:id" element={<UserDetails />} />
         <Route path="/login" element={<Login />} />
         <Route path="/fetch-component" element={<FetchComponent />} />
+        <Route path="/post-component" element={<PostComponent />} />
+        <Route path="/lazzy-loading" element={<LazyLoading />} />
         <Route path="/counter-limit" element={<CounterLimit />} />
+        <Route path="/promise-component" element={<SamplePromiseComponent />} />
       </Routes>
       <div style={{ textAlign: 'center', padding: '20px' }}>
         <ThemedComponent />

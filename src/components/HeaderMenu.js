@@ -38,6 +38,15 @@ const HeaderMenu = () => {
               <Link className="nav-link" to="/order-list">Order</Link>
             </li>
             <li className="nav-item">
+              <Link className="nav-link" to="/lazzy-loading">lazzy-loading</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/post-component">Post Component</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/promise-component">Promise Component</Link>
+            </li>
+            <li className="nav-item">
               <Link className="nav-link" to="/student-list">Student list (HOC)</Link>
             </li>
             <li className="nav-item">

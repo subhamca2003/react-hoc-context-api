@@ -45,9 +45,9 @@ const PostList = () => {
                         <th>User Id</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody style={postListStyles}>
                     {posts.map(post => (
-                        <tr key={post.id}>
+                        <tr key={post.id} style={postItemStyles}>
                             <td>{post.id}</td>
                             <td><Link to={`/user/${post.id}`}>{post.title}</Link></td>
                             <td>{post.body}</td>
@@ -60,4 +60,18 @@ const PostList = () => {
     );
 };
 
+// Styles for the PostList
+const postListStyles = {
+    maxHeight: '200px', // Set a maximum height for the list
+    overflowY: 'auto', // Enable vertical scrolling for long lists
+    border: '1px solid #ccc', // Add a border for better visuals
+    padding: '10px',
+    marginTop: '10px',
+  };
+  
+  // Styles for each post item
+  const postItemStyles = {
+    padding: '5px',
+    borderBottom: '1px solid #eee', // Add a separator between items
+  };
 export default PostList;

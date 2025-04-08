@@ -1,0 +1,32 @@
+.post-component {
+    background-color: #f8f9fa; /* Light background for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Fixed width for better layout */
+}
+
+.email-display {
+    margin-bottom: 20px;
+}
+
+.email-address {
+    font-weight: bold;
+    color: #007bff; /* Bootstrap primary color */
+}
+
+.child-component {
+    margin-top: 20px;
+}
+
+.form-control {
+    border: 1px solid #ced4da; /* Light border */
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%; /* Full width */
+}
+
+.form-control:focus {
+    border-color: #80bdff; /* Focus border color */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Focus shadow */
+}
